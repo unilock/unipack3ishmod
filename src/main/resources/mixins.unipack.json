@@ -2,7 +2,10 @@
   "required": true,
   "package": "cc.unilock.unipack.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [],
+  "mixins": [
+    "ComplexhexConfigFabricMixin",
+    "ForgeXplatImplMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1

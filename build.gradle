@@ -14,6 +14,21 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven {
+        name = 'Sinytra'
+        url = 'https://maven.su5ed.dev/releases/'
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Modrinth'
+                url = 'https://api.modrinth.com/maven/'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
 }
 
 base {
@@ -65,6 +80,11 @@ configurations {
 
 dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    implementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
+
+    implementation 'maven.modrinth:hex-casting:xENnFQpR'
+    implementation 'maven.modrinth:complex-hex:0.1.0'
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
