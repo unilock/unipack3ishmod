@@ -80,11 +80,18 @@ configurations {
 
 dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.4.1'))
+    jarJar(implementation('io.github.llamalad7:mixinextras-forge:0.4.1')) {
+        version {
+            strictly '[0.4.1,)'
+        }
+    }
 
     implementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 
-    implementation 'maven.modrinth:hex-casting:xENnFQpR'
     implementation 'maven.modrinth:complex-hex:0.1.0'
+    implementation 'maven.modrinth:hex-casting:xENnFQpR'
+    implementation 'maven.modrinth:immersive-geology:0.3.3-b27'
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
