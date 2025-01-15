@@ -15,6 +15,10 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven {
+        name = 'Bawnorton'
+        url = 'https://maven.bawnorton.com/releases/'
+    }
+    maven {
         name = 'Sinytra'
         url = 'https://maven.su5ed.dev/releases/'
     }
@@ -79,13 +83,19 @@ configurations {
 }
 
 dependencies {
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly(annotationProcessor('com.github.bawnorton.mixinsquared:mixinsquared-common:0.2.0'))
+    jarJar(implementation('com.github.bawnorton.mixinsquared:mixinsquared-forge:0.2.0')) {
+        version {
+            strictly '[0.2.0,)'
+        }
+    }
     compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.4.1'))
     jarJar(implementation('io.github.llamalad7:mixinextras-forge:0.4.1')) {
         version {
             strictly '[0.4.1,)'
         }
     }
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     implementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 

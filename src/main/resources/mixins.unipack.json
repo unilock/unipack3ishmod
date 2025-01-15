@@ -7,7 +7,9 @@
     "ForgeXplatImplMixin",
     "IGOreFeatureConfigMixin"
   ],
-  "client": [],
+  "client": [
+    "MusicTrackerMixinSquared"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
