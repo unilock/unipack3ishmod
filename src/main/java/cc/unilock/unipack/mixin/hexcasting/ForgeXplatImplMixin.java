@@ -1,4 +1,4 @@
-package cc.unilock.unipack.mixin;
+package cc.unilock.unipack.mixin.hexcasting;
 
 import at.petrak.hexcasting.forge.xplat.ForgeXplatImpl;
 import net.fabricmc.loader.api.FabricLoader;

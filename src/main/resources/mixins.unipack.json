@@ -3,12 +3,12 @@
   "package": "cc.unilock.unipack.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ComplexhexConfigFabricMixin",
-    "ForgeXplatImplMixin",
-    "IGOreFeatureConfigMixin"
+    "complexhex.ComplexhexConfigFabricMixin",
+    "hexcasting.ForgeXplatImplMixin",
+    "immersivegeology.IGOreFeatureConfigMixin"
   ],
   "client": [
-    "MusicTrackerMixinSquared"
+    "dsurround.MusicTrackerMixinSquared"
   ],
   "injectors": {
     "defaultRequire": 1

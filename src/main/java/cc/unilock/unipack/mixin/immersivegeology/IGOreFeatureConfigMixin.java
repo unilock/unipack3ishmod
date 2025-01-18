@@ -1,4 +1,4 @@
-package cc.unilock.unipack.mixin;
+package cc.unilock.unipack.mixin.immersivegeology;
 
 import com.igteam.immersivegeology.common.world.IGOreFeature;
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;

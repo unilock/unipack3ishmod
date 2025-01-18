@@ -1,4 +1,4 @@
-package cc.unilock.unipack.mixin;
+package cc.unilock.unipack.mixin.dsurround;
 
 import com.bawnorton.mixinsquared.TargetHandler;
 import net.minecraft.client.sounds.MusicManager;

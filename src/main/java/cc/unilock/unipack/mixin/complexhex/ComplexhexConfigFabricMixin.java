@@ -1,4 +1,4 @@
-package cc.unilock.unipack.mixin;
+package cc.unilock.unipack.mixin.complexhex;
 
 import dev.kineticcat.complexhex.fabric.ComplexhexConfigFabric;
 import net.fabricmc.api.EnvType;
