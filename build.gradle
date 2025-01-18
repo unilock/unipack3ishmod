@@ -95,15 +95,15 @@ configurations {
 
 dependencies {
     compileOnly(annotationProcessor('com.github.bawnorton.mixinsquared:mixinsquared-common:0.2.0'))
-    jarJar(modImplementation('com.github.bawnorton.mixinsquared:mixinsquared-forge:0.2.0')) {
+    jarJar(implementation('com.github.bawnorton.mixinsquared:mixinsquared-forge:0.2.0')) {
         version {
             strictly '[0.2.0,)'
         }
     }
     compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.4.1'))
-    jarJar(modImplementation('io.github.llamalad7:mixinextras-forge:0.4.1')) {
+    jarJar(implementation('io.github.llamalad7:mixinextras-forge:0.4.1')) {
         version {
-            strictly '[0.4.1,)'
+            strictly '[0.4.1,0.5.0-beta.4]'
         }
     }
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
@@ -111,10 +111,13 @@ dependencies {
     modImplementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 
     modImplementation 'curse.maven:apotheosis-313970:6071600'
+    modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modImplementation 'maven.modrinth:hex-casting:xENnFQpR'
     modImplementation 'maven.modrinth:immersive-geology:0.3.3-b27'
 
     implementation 'maven.modrinth:complex-hex:0.1.0'
+
+    modCompileOnly 'maven.modrinth:architectury-api:9.2.14+forge'
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

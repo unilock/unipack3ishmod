@@ -5,6 +5,7 @@
   "mixins": [
     "apotheosis.ApothBossMixin",
     "apotheosis.BossEventsMixin",
+    "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "hexcasting.ForgeXplatImplMixin",
     "immersivegeology.IGOreFeatureConfigMixin"
