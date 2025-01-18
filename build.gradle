@@ -114,6 +114,7 @@ dependencies {
     modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modImplementation 'maven.modrinth:hex-casting:xENnFQpR'
     modImplementation 'maven.modrinth:immersive-geology:0.3.3-b27'
+    modImplementation 'maven.modrinth:shrink:1.4.5'
 
     implementation 'maven.modrinth:complex-hex:0.1.0'
 
