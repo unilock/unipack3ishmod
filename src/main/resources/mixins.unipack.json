@@ -8,7 +8,8 @@
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "hexcasting.ForgeXplatImplMixin",
-    "immersivegeology.IGOreFeatureConfigMixin"
+    "immersivegeology.IGOreFeatureConfigMixin",
+    "minecraft.ServerPlayerMixin"
   ],
   "client": [
     "dsurround.MusicTrackerMixinSquared"
