@@ -39,6 +39,7 @@ public class PVPManager {
 		}
 
 		pvpWhitelist.add(new UserWhiteListEntry(ctx.getSource().getPlayer().getGameProfile()));
+		ctx.getSource().sendSystemMessage(Component.literal("PVP enabled"));
 		return Command.SINGLE_SUCCESS;
 	}
 
@@ -49,6 +50,7 @@ public class PVPManager {
 		}
 
 		pvpWhitelist.remove(ctx.getSource().getPlayer().getGameProfile());
+		ctx.getSource().sendSystemMessage(Component.literal("PVP disabled"));
 		return Command.SINGLE_SUCCESS;
 	}
 }
