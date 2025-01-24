@@ -2,6 +2,7 @@
   "required": true,
   "package": "cc.unilock.unipack.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "cc.unilock.unipack.UniPackMixin",
   "mixins": [
     "apotheosis.ApothBossMixin",
     "apotheosis.BossEventsMixin",
