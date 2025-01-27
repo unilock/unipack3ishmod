@@ -10,7 +10,8 @@
     "complexhex.ComplexhexConfigFabricMixin",
     "hexcasting.ForgeXplatImplMixin",
     "immersivegeology.IGOreFeatureIGOreFeatureConfigMixin",
-    "petrolpark.ConfigBooleanConditionSerializerMixin"
+    "petrolpark.ConfigBooleanConditionSerializerMixin",
+    "projectile_damage.PlatformImplMixin"
   ],
   "client": [
     "dsurround.MusicTrackerMixinSquared"
