@@ -1,24 +1,23 @@
-package cc.unilock.unipack;
+package cc.unilock.unipack.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.players.UserWhiteList;
 import net.minecraft.server.players.UserWhiteListEntry;
 import net.minecraftforge.fml.loading.FMLPaths;
 
-import static net.minecraft.commands.Commands.literal;
-
-public class PVPManager {
+public class PVPCommand {
 	public static final UserWhiteList pvpWhitelist = new UserWhiteList(FMLPaths.CONFIGDIR.get().resolve("pvp.json").toFile());
 
 	public static void registerCommand(CommandDispatcher<CommandSourceStack> dispatcher) {
 		dispatcher.register(
-				literal("pvp").executes(PVPManager::status)
-						.then(literal("enable").executes(PVPManager::enable))
-						.then(literal("disable").executes(PVPManager::disable))
+				Commands.literal("pvp").executes(PVPCommand::status)
+						.then(Commands.literal("enable").executes(PVPCommand::enable))
+						.then(Commands.literal("disable").executes(PVPCommand::disable))
 		);
 	}
 

@@ -1,5 +1,7 @@
 package cc.unilock.unipack;
 
+import cc.unilock.unipack.command.DumpRegistriesCommand;
+import cc.unilock.unipack.command.PVPCommand;
 import com.mojang.logging.LogUtils;
 import net.gigabit101.shrink.items.ShrinkItems;
 import net.minecraft.ChatFormatting;
@@ -20,7 +22,7 @@ import java.util.UUID;
 @Mod(UniPack.MOD_ID)
 public class UniPack {
     public static final String MOD_ID = "unipack";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public UniPack() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -50,8 +52,8 @@ public class UniPack {
                 return;
             }
 
-            boolean defenderPvpDisabled = !PVPManager.pvpWhitelist.isWhiteListed(defender.getGameProfile());
-            boolean attackerPvpDisabled = !PVPManager.pvpWhitelist.isWhiteListed(attacker.getGameProfile());
+            boolean defenderPvpDisabled = !PVPCommand.pvpWhitelist.isWhiteListed(defender.getGameProfile());
+            boolean attackerPvpDisabled = !PVPCommand.pvpWhitelist.isWhiteListed(attacker.getGameProfile());
 
             if (defenderPvpDisabled || attackerPvpDisabled) {
                 event.setCanceled(true);
@@ -60,6 +62,7 @@ public class UniPack {
     }
 
     private void registerCommands(final RegisterCommandsEvent event) {
-        PVPManager.registerCommand(event.getDispatcher());
+        DumpRegistriesCommand.registerCommand(event.getDispatcher());
+        PVPCommand.registerCommand(event.getDispatcher());
     }
 }
