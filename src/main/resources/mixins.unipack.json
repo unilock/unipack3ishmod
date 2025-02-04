@@ -4,12 +4,9 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "cc.unilock.unipack.UniPackMixin",
   "mixins": [
-    "apotheosis.ApothBossMixin",
-    "apotheosis.BossEventsMixin",
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "hexcasting.ForgeXplatImplMixin",
-    "immersivegeology.IGOreFeatureIGOreFeatureConfigMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
   ],

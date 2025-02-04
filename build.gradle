@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev.legacyforge' version '2.0.74'
+    id 'net.neoforged.moddev.legacyforge' version '2.0.77'
     id 'idea'
 }
 
@@ -95,31 +95,23 @@ configurations {
 
 dependencies {
     compileOnly(annotationProcessor('com.github.bawnorton.mixinsquared:mixinsquared-common:0.2.0'))
-    jarJar(implementation('com.github.bawnorton.mixinsquared:mixinsquared-forge:0.2.0')) {
-        version {
-            strictly '[0.2.0,)'
-        }
-    }
+    implementation(jarJar('com.github.bawnorton.mixinsquared:mixinsquared-forge:0.2.0'))
     compileOnly(annotationProcessor('io.github.llamalad7:mixinextras-common:0.4.1'))
-    jarJar(implementation('io.github.llamalad7:mixinextras-forge:0.4.1')) {
-        version {
-            strictly '[0.4.1,0.5.0-beta.4]'
-        }
-    }
+    implementation(jarJar('io.github.llamalad7:mixinextras-forge:0.4.1'))
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     modImplementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 
-    modImplementation 'curse.maven:apotheosis-313970:6071600'
+    modImplementation 'curse.maven:apotheosis-313970:6147871'
+    modImplementation 'curse.maven:apothic-attributes-898963:5634071'
     modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modImplementation 'maven.modrinth:create:1.20.1-0.5.1.j'
     modImplementation 'maven.modrinth:hex-casting:xENnFQpR'
-    modImplementation 'maven.modrinth:immersive-geology:0.4.0-b33'
-    modImplementation 'maven.modrinth:petrolpark:1.20.1-1.3.2'
+    modImplementation 'maven.modrinth:petrolpark:1.20.1-1.4.0'
     modImplementation 'maven.modrinth:projectile-damage-attribute:3.2.3+1.20.1-forge'
     modImplementation 'maven.modrinth:shrink:1.4.5'
 
-    implementation 'maven.modrinth:complex-hex:0.1.0'
+    implementation 'maven.modrinth:complex-hex:0.1.1-beta'
 
     modCompileOnly 'maven.modrinth:architectury-api:9.2.14+forge'
 }
