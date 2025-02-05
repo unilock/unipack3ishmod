@@ -7,6 +7,7 @@
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "hexcasting.ForgeXplatImplMixin",
+    "neepmeat.NMFluidsMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
   ],

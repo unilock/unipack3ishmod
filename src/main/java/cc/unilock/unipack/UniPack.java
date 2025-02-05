@@ -7,6 +7,7 @@ import net.gigabit101.shrink.items.ShrinkItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -34,6 +35,8 @@ public class UniPack {
         }
         MinecraftForge.EVENT_BUS.addListener(this::livingHurt);
         MinecraftForge.EVENT_BUS.addListener(this::registerCommands);
+
+        ForgeMod.enableMilkFluid();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
