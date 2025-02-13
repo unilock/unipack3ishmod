@@ -112,7 +112,9 @@ dependencies {
     modImplementation 'maven.modrinth:shrink:1.4.5'
 
     implementation 'maven.modrinth:complex-hex:0.1.1-beta'
+    implementation 'maven.modrinth:geckolib:DAY9559u'
     implementation 'maven.modrinth:neepmeat:0.10.1-beta+1.20.1'
+    implementation files('libs/geckolib-fabric-compat-1.11.2+1.20.1.jar')
 
     modCompileOnly 'maven.modrinth:architectury-api:9.2.14+forge'
 }

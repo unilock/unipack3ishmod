@@ -6,9 +6,8 @@
   "mixins": [
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
+    "geckolib.GeoItemMixin",
     "hexcasting.ForgeXplatImplMixin",
-    "neepmeat.NeepMeatMixin",
-    "neepmeat.NMFluidsMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
   ],
