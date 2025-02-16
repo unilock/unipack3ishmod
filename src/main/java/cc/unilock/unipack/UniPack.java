@@ -12,6 +12,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
@@ -33,7 +34,7 @@ public class UniPack {
         if (ModList.get().isLoaded("shrink")) {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);
         }
-        MinecraftForge.EVENT_BUS.addListener(this::livingHurt);
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGHEST, this::livingHurt);
         MinecraftForge.EVENT_BUS.addListener(this::registerCommands);
 
         ForgeMod.enableMilkFluid();
