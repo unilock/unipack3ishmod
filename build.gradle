@@ -106,8 +106,9 @@ dependencies {
     modImplementation 'curse.maven:apothic-attributes-898963:5634071'
     modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modImplementation 'maven.modrinth:create:1.20.1-0.5.1.j'
+    modImplementation 'maven.modrinth:destroy:1.20.1-0.1.0-snapshot-16'
     modImplementation 'maven.modrinth:hex-casting:xENnFQpR'
-    modImplementation 'maven.modrinth:petrolpark:1.20.1-1.4.0'
+    modImplementation 'maven.modrinth:petrolpark:1.20.1-1.4.1'
     modImplementation 'maven.modrinth:projectile-damage-attribute:3.2.3+1.20.1-forge'
     modImplementation 'maven.modrinth:shrink:1.4.5'
 

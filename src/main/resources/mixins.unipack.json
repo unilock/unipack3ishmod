@@ -6,13 +6,14 @@
   "mixins": [
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
-    "geckolib.GeoItemMixin",
     "hexcasting.ForgeXplatImplMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
   ],
   "client": [
-    "dsurround.MusicTrackerMixinSquared"
+    "destroy.DestroyCommonEventsMixin",
+    "dsurround.MusicTrackerMixinSquared",
+    "geckolib.GeoItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
