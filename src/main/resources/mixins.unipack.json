@@ -6,6 +6,7 @@
   "mixins": [
     "biomemakeover.EntityUtilMixin",
     "complexhex.ComplexhexConfigFabricMixin",
+    "corail_backpack.UtilsMixin",
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.ForgeXplatImplMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
