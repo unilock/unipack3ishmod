@@ -9,6 +9,7 @@
     "corail_backpack.UtilsMixin",
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.ForgeXplatImplMixin",
+    "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
   ],
