@@ -10,6 +10,7 @@
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
+    "minecraft.LivingEntityMixin",
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin"
