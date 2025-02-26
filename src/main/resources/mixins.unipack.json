@@ -8,6 +8,7 @@
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
     "enigmaticlegacy.CursedRingMixin",
+    "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",

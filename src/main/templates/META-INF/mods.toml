@@ -12,6 +12,7 @@ displayName="${mod_name}"
 #credits=""
 authors="${mod_authors}"
 description='''${mod_description}'''
+displayTest="IGNORE_ALL_VERSION"
 
 [[dependencies.${mod_id}]]
     modId="forge"
