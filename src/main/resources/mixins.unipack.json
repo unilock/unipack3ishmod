@@ -5,6 +5,7 @@
   "plugin": "cc.unilock.unipack.UniPackMixin",
   "mixins": [
     "biomemakeover.EntityUtilMixin",
+    "caupona.CPCommonEventsMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
     "enigmaticlegacy.CursedRingMixin",

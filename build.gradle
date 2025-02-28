@@ -105,6 +105,7 @@ dependencies {
     modImplementation 'curse.maven:apotheosis-313970:6147871'
     modImplementation 'curse.maven:apothic-attributes-898963:5634071'
     modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
+    modImplementation 'curse.maven:caupona-656147:6177010'
     modImplementation 'curse.maven:corail-backpack-433316:5264214'
     modImplementation 'maven.modrinth:create:1.20.1-0.5.1.j'
     modImplementation 'maven.modrinth:destroy:1.20.1-0.1.0-snapshot-16'
