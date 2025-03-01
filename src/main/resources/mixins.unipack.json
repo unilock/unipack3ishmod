@@ -19,7 +19,6 @@
   "client": [
     "destroy.DestroyCommonEventsMixin",
     "dsurround.MusicTrackerMixinSquared",
-    "forge.ForgeGuiMixin",
     "geckolib.GeoItemMixin"
   ],
   "injectors": {
