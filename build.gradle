@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev.legacyforge' version '2.0.77'
+    id 'net.neoforged.moddev.legacyforge' version '2.0.78'
     id 'idea'
 }
 
@@ -102,8 +102,6 @@ dependencies {
 
     modImplementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 
-    modImplementation 'curse.maven:apotheosis-313970:6147871'
-    modImplementation 'curse.maven:apothic-attributes-898963:5634071'
     modImplementation 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modImplementation 'curse.maven:caupona-656147:6177010'
     modImplementation 'curse.maven:corail-backpack-433316:5264214'
@@ -117,7 +115,6 @@ dependencies {
 
     implementation 'maven.modrinth:complex-hex:0.1.1-beta'
     implementation 'maven.modrinth:geckolib:DAY9559u'
-    implementation 'maven.modrinth:neepmeat:0.10.1-beta+1.20.1'
     // modImplementation doesn't work on this for some reason?
     implementation files('libs/geckolib-fabric-compat-1.11.2+1.20.1.jar')
 
