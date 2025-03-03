@@ -14,7 +14,7 @@ public class ComplexhexConfigFabricMixin {
 	 * @reason Fabric code on Forge
 	 */
 	@Redirect(method = "init", at = @At(value = "INVOKE", target = "Ldev/architectury/platform/Platform;getEnv()Lnet/fabricmc/api/EnvType;"))
-	private static EnvType getEnv() {
+	private static EnvType init$getEnv() {
 		return FabricLoader.getInstance().getEnvironmentType();
 	}
 }

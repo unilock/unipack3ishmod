@@ -11,10 +11,12 @@
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
+    "jade.WailaConfigConfigGeneralMixin",
     "minecraft.LivingEntityMixin",
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
-    "projectile_damage.PlatformImplMixin"
+    "projectile_damage.PlatformImplMixin",
+    "reputation.ReputationPluginMixin"
   ],
   "client": [
     "destroy.DestroyCommonEventsMixin",

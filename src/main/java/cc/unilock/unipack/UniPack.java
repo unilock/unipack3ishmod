@@ -20,8 +20,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-import java.util.UUID;
-
 @Mod(UniPack.MOD_ID)
 public class UniPack {
     public static final String MOD_ID = "unipack";
@@ -52,10 +50,7 @@ public class UniPack {
 
     private void livingHurt(final LivingHurtEvent event) {
         if (event.getEntity() instanceof Player defender && event.getSource().getEntity() instanceof Player attacker) {
-            UUID defenderUuid = defender.getUUID();
-            UUID attackerUuid = attacker.getUUID();
-
-            if (defenderUuid.equals(attackerUuid)) {
+            if (defender.is(attacker)) {
                 return;
             }
 
@@ -63,6 +58,7 @@ public class UniPack {
             boolean attackerPvpDisabled = !PVPCommand.pvpWhitelist.isWhiteListed(attacker.getGameProfile());
 
             if (defenderPvpDisabled || attackerPvpDisabled) {
+                event.setAmount(0); // TODO: Necessary?
                 event.setCanceled(true);
             }
         }
