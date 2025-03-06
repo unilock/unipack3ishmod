@@ -15,8 +15,7 @@ import java.util.Map;
 public class LivingEntityMixin {
 	@Shadow @Final private Map<MobEffect, MobEffectInstance> activeEffects;
 
-	// PAIN
-	@WrapMethod(method = "m_21023_(Lnet/minecraft/world/effect/MobEffect;)Z", remap = false)
+	@WrapMethod(method = "hasEffect")
 	private boolean hasEffect(MobEffect effect, Operation<Boolean> original) {
 		return this.activeEffects != null && original.call(effect);
 	}
