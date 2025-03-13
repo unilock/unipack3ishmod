@@ -9,6 +9,7 @@
     "caupona.CPCommonEventsMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
+    "create.FilteringBehaviourMixin",
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
