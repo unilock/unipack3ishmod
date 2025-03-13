@@ -22,7 +22,8 @@
   "client": [
     "destroy.DestroyCommonEventsMixin",
     "dsurround.MusicTrackerMixinSquared",
-    "geckolib.GeoItemMixin"
+    "geckolib.GeoItemMixin",
+    "spectrum.DarknessEffectsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

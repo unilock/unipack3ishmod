@@ -1,5 +1,6 @@
 package cc.unilock.unipack;
 
+import com.bawnorton.mixinsquared.canceller.MixinCancellerRegistrar;
 import net.fabricmc.loader.api.FabricLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -11,7 +12,7 @@ import java.util.Set;
 public class UniPackMixin implements IMixinConfigPlugin {
 	@Override
 	public void onLoad(String mixinPackage) {
-		// NO-OP
+		MixinCancellerRegistrar.register(new UniPackMixinCanceller());
 	}
 
 	@Override
