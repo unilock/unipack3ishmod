@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.Mixin;
 public class SnowyDirtBlockMixin extends Block {
 	public SnowyDirtBlockMixin(Properties properties) {
 		super(properties);
-		throw new AssertionError("SnowyDirtBlockMixin instantiated!?");
+		throw new IllegalStateException("SnowyDirtBlockMixin instantiated!?");
 	}
 
 	@Override

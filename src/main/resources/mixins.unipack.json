@@ -15,6 +15,7 @@
     "hexcasting.ForgeXplatImplMixin",
     "jade.WailaConfigConfigGeneralMixin",
     "minecraft.LivingEntityMixin",
+    "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin",
