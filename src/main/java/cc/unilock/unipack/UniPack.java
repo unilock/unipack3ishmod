@@ -6,6 +6,7 @@ import com.mojang.logging.LogUtils;
 import net.gigabit101.shrink.items.ShrinkItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.EntityDataSerializer;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -15,6 +16,8 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 @Mod(UniPack.MOD_ID)
@@ -22,9 +25,13 @@ public class UniPack {
     public static final String MOD_ID = "unipack";
     public static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final DeferredRegister<EntityDataSerializer<?>> ENTITY_DATA_SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, MOD_ID);
+
     public UniPack() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
+
+        ENTITY_DATA_SERIALIZERS.register(modEventBus);
 
         if (ModList.get().isLoaded("shrink")) {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);

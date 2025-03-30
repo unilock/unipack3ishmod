@@ -14,8 +14,10 @@ Yes
 ## Things it does
 
 - adds a /dump_registry command (logs every identifier in the provided registry to "registry.txt")
+  - for `minecraft:enchantment`, also logs the max level of each enchantment
 - adds a /pvp command (for toggling pvp per-player)
 - fixes a bug in Biome Makeover that causes an internal server error
+- fixes a bug in Blood Magic that causes client/server entity data desyncs
 - fixes a bug in Caupona that causes an internal server error
 - fixes an incompatibility in Complex Hex when used with Sinytra Connector that causes a startup crash
 - fixes a bug in Corail Backpack when used with Accessories that causes it to not work

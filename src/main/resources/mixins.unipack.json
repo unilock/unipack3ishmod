@@ -6,6 +6,7 @@
   "plugin": "cc.unilock.unipack.UniPackMixin",
   "mixins": [
     "biomemakeover.EntityUtilMixin",
+    "bloodmagic.SerializersMixin",
     "caupona.CPCommonEventsMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
@@ -17,7 +18,6 @@
     "minecraft.LivingEntityMixin",
     "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
-    "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin",
     "reputation.ReputationPluginMixin"
   ],
