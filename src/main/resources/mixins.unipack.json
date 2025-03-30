@@ -18,6 +18,7 @@
     "minecraft.LivingEntityMixin",
     "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
+    "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin",
     "reputation.ReputationPluginMixin"
   ],
