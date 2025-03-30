@@ -19,6 +19,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
+import wayoftime.bloodmagic.gson.Serializers;
 
 @Mod(UniPack.MOD_ID)
 public class UniPack {
@@ -32,7 +33,9 @@ public class UniPack {
         modEventBus.addListener(this::commonSetup);
 
         ENTITY_DATA_SERIALIZERS.register(modEventBus);
-
+        if (ModList.get().isLoaded("bloodmagic")) {
+            UniPack.ENTITY_DATA_SERIALIZERS.register("will_type", () -> Serializers.WILL_TYPE_SERIALIZER);
+        }
         if (ModList.get().isLoaded("shrink")) {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);
         }
