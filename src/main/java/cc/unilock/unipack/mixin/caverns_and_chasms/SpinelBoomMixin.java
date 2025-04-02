@@ -11,12 +11,12 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(value = SpinelBoom.class, remap = false)
+@Mixin(SpinelBoom.class)
 public class SpinelBoomMixin {
 	@Unique
 	private RandomSource random;
 
-	@Inject(method = "<init>(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;DDDFLnet/minecraft/world/level/Explosion$BlockInteraction;)V", at = @At("TAIL"))
+	@Inject(method = "<init>(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;DDDFLnet/minecraft/world/level/Explosion$BlockInteraction;)V", at = @At("TAIL"), remap = false)
 	private void initRandom(CallbackInfo ci) {
 		random = RandomSource.create();
 	}
