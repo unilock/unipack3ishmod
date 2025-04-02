@@ -34,7 +34,7 @@ public class UniPack {
 
         ENTITY_DATA_SERIALIZERS.register(modEventBus);
         if (ModList.get().isLoaded("bloodmagic")) {
-            UniPack.ENTITY_DATA_SERIALIZERS.register("will_type", () -> Serializers.WILL_TYPE_SERIALIZER);
+            ENTITY_DATA_SERIALIZERS.register("will_type", () -> Serializers.WILL_TYPE_SERIALIZER);
         }
         if (ModList.get().isLoaded("shrink")) {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);
