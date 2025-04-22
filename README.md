@@ -33,6 +33,7 @@ Yes
 - fixes a weird server crash with Spectrum and some other unidentified mod
 - allows using a hoe to till mycelium and podzol
 - fixes a bug in Petrolpark's Library that causes a datapack reload crash
+- fixes a bug in Petrolpark's Library that causes a dedicated server crash during mod init
 - fixes an incompatibility in Projectile Damage when used with Sinytra Connector that causes a startup crash
 - disables all of Spectrum's darkness effects in its dimension as they do not work properly for me and make the dimension innavigable
 - allows Spectrum's MultiToolItems to perform Forge's ToolActions

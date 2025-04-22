@@ -20,6 +20,7 @@
     "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
+    "petrolpark.PetrolparkMixin",
     "projectile_damage.PlatformImplMixin",
     "spectrum.MultiToolItemMixin"
   ],
