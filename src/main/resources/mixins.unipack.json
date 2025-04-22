@@ -12,6 +12,7 @@
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
     "create.FilteringBehaviourMixin",
+    "create_destroy_tfmg.FluidPropagatorMixin",
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",

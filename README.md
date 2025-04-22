@@ -23,6 +23,7 @@ Yes
 - fixes an incompatibility in Complex Hex when used with Sinytra Connector that causes a startup crash
 - fixes a bug in Corail Backpack when used with Accessories that causes it to not work
 - fixes a bug in Create when used with Stacker (bigger stack sizes mod)
+- fixes a bug in Create: The Factory Must Grow when used alongside Destroy that causes a crash upon placing a pump block / entering a world
 - fixes a bug in Destroy that causes a client crash
 - disables extraneous logging in Dynamic Surroundings
 - disables extra mob aggression when wearing the Ring of the Seven Curses from Enigmatic Legacy (evil mod)
