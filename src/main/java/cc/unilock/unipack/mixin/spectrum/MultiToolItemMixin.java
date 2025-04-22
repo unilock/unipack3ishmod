@@ -1,19 +1,28 @@
 package cc.unilock.unipack.mixin.spectrum;
 
 import com.google.common.collect.Sets;
-import de.dafuqs.spectrum.items.tools.MultiToolItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.common.extensions.IForgeItem;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 
 import java.util.Set;
 
-@Mixin(value = MultiToolItem.class, remap = false)
-public abstract class MultiToolItemMixin implements IForgeItem {
+@Mixin(targets = "de.dafuqs.spectrum.items.tools.MultiToolItem")
+@Pseudo
+public abstract class MultiToolItemMixin extends DiggerItem {
+	public MultiToolItemMixin(float attackDamageModifier, float attackSpeedModifier, Tier tier, TagKey<Block> blocks, Properties properties) {
+		super(attackDamageModifier, attackSpeedModifier, tier, blocks, properties);
+		throw new IllegalStateException("MultiToolItemMixin instantiated!?");
+	}
+
 	@Shadow public abstract boolean canTill(ItemStack stack);
 
 	@Unique
@@ -41,7 +50,7 @@ public abstract class MultiToolItemMixin implements IForgeItem {
 		} else if (canTill(stack) && SPECIAL_TOOL_ACTIONS.contains(toolAction)) {
 			return true;
 		} else {
-			return IForgeItem.super.canPerformAction(stack, toolAction);
+			return super.canPerformAction(stack, toolAction);
 		}
 	}
 }
