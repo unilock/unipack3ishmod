@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class UniPackMixinCanceller implements MixinCanceller {
 	private static final Set<String> CANCEL = Set.of(
-			"com.drmangotea.createindustry.mixins.FluidPropagatorMixin",
+			"com.drmangotea.tfmg.mixins.FluidPropagatorMixin",
 			"com.petrolpark.destroy.mixin.FluidPropagatorMixin",
 			"de.dafuqs.spectrum.mixin.client.BackgroundRendererMixin",
 			"de.dafuqs.spectrum.mixin.client.GameRendererMixin",
