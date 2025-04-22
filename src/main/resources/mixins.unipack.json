@@ -21,7 +21,8 @@
     "minecraft.SnowyDirtBlockMixin",
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "projectile_damage.PlatformImplMixin",
-    "reputation.ReputationPluginMixin"
+    "reputation.ReputationPluginMixin",
+    "spectrum.MultiToolItemMixin"
   ],
   "client": [
     "destroy.DestroyCommonEventsMixin",

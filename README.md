@@ -19,6 +19,7 @@ Yes
 - fixes a bug in Biome Makeover that causes an internal server error
 - fixes a bug in Blood Magic that causes client/server entity data desyncs
 - fixes a bug in Caupona that causes an internal server error
+- fixes a bug in Caverns & Chasms that causes an internal server error
 - fixes an incompatibility in Complex Hex when used with Sinytra Connector that causes a startup crash
 - fixes a bug in Corail Backpack when used with Accessories that causes it to not work
 - fixes a bug in Create when used with Stacker (bigger stack sizes mod)
@@ -35,6 +36,7 @@ Yes
 - fixes an incompatibility in Projectile Damage when used with Sinytra Connector that causes a startup crash
 - tries to fix something with Your Reputation (Jade addon) but does not do so successfully
 - disables all of Spectrum's darkness effects in its dimension as they do not work properly for me and make the dimension innavigable
+- allows Spectrum's MultiToolItems to perform Forge's ToolActions
 - fixes MC-122477
 - adds a tooltip to the "Shrinking Device" from "Shrink." that says it does not require power
 - prints "unilock was here" to the log during startup
