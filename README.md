@@ -34,9 +34,9 @@ Yes
 - allows using a hoe to till mycelium and podzol
 - fixes a bug in Petrolpark's Library that causes a datapack reload crash
 - fixes an incompatibility in Projectile Damage when used with Sinytra Connector that causes a startup crash
-- tries to fix something with Your Reputation (Jade addon) but does not do so successfully
 - disables all of Spectrum's darkness effects in its dimension as they do not work properly for me and make the dimension innavigable
 - allows Spectrum's MultiToolItems to perform Forge's ToolActions
 - fixes MC-122477
 - adds a tooltip to the "Shrinking Device" from "Shrink." that says it does not require power
 - prints "unilock was here" to the log during startup
+- fixes a bug in Petrolpark's Library that causes a crash with certain mods due to loading a Minecraft class pre-mixin processing
