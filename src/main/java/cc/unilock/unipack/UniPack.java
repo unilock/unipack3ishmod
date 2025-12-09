@@ -40,8 +40,6 @@ public class UniPack {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);
         }
         MinecraftForge.EVENT_BUS.addListener(this::registerCommands);
-
-        ForgeMod.enableMilkFluid();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

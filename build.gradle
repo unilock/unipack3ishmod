@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev.legacyforge' version '2.0.80'
+    id 'net.neoforged.moddev.legacyforge' version '2.0.112'
     id 'eclipse'
     id 'idea'
 }
@@ -108,23 +108,23 @@ dependencies {
     modImplementation 'dev.su5ed.sinytra:fabric-loader:2.7.10+0.16.5+1.20.1'
 
     modCompileOnly 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
-    modCompileOnly 'maven.modrinth:blood-magic:1.20.1-3.3.3-45'
-    modCompileOnly 'curse.maven:caupona-656147:6406685'
+    modCompileOnly 'maven.modrinth:blood-magic:3.3.5-47'
+    modCompileOnly 'curse.maven:caupona-656147:7112017'
     modCompileOnly 'maven.modrinth:caverns-and-chasms:2.0.0'
     modCompileOnly 'curse.maven:corail-backpack-433316:5264214'
     modCompileOnly 'maven.modrinth:create:1.20.1-0.5.1.j'
-    modCompileOnly 'maven.modrinth:create-tfmg:X2HJdwy8'
-    modCompileOnly 'maven.modrinth:destroy:1.20.1-0.1.1'
+    modCompileOnly 'maven.modrinth:create-tfmg:0.9.3-1.20.1'
+    modCompileOnly 'maven.modrinth:destroy:1.20.1-0.1.3'
     modCompileOnly 'maven.modrinth:enigmatic-legacy:2.30.1'
-    modCompileOnly 'maven.modrinth:hex-casting:xENnFQpR'
-    modCompileOnly 'maven.modrinth:jade:11.12.3+forge'
+    modCompileOnly 'maven.modrinth:hex-casting:O6xIFHAg'
+    modCompileOnly 'maven.modrinth:jade:11.13.2+forge'
     modCompileOnly 'maven.modrinth:petrolpark:1.20.1-1.4.2'
     modCompileOnly 'maven.modrinth:projectile-damage-attribute:3.2.3+1.20.1-forge'
     modCompileOnly 'maven.modrinth:shrink:1.4.5'
 
     compileOnly 'maven.modrinth:complex-hex:0.1.3-beta'
-    compileOnly 'maven.modrinth:geckolib:ytGMpRks'
-    compileOnly 'maven.modrinth:spectrum:1.8.5'
+    compileOnly 'maven.modrinth:geckolib:AXhbVyuq'
+    compileOnly 'maven.modrinth:spectrum:1.8.11'
     compileOnly 'maven.modrinth:your-reputation:0.2.5+jade.1.20'
     // modCompileOnly doesn't work on this for some reason?
     compileOnly files('libs/geckolib-fabric-compat-1.11.2+1.20.1.jar')
