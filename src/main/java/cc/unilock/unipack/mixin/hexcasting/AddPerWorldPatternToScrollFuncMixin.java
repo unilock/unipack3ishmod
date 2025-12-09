@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = AddPerWorldPatternToScrollFunc.class, remap = false)
 public class AddPerWorldPatternToScrollFuncMixin {
-	@Inject(method = "doStatic(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;", at = @At(value = "NEW", target = "()Lnet/minecraft/nbt/CompoundTag;"), cancellable = true)
+	@Inject(method = "doStatic", at = @At(value = "INVOKE", target = "Lat/petrak/hexcasting/api/utils/NBTHelper;putString(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;Ljava/lang/String;)V"), cancellable = true)
 	private static void doStatic(CallbackInfoReturnable<ItemStack> cir, @Local HexPattern pat) {
 		if (pat == null) cir.setReturnValue(ItemStack.EMPTY);
 	}
