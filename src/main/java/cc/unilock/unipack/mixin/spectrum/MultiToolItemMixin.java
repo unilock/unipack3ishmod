@@ -23,7 +23,7 @@ public abstract class MultiToolItemMixin extends DiggerItem {
 		throw new IllegalStateException("MultiToolItemMixin instantiated!?");
 	}
 
-	@Shadow public abstract boolean canTill(ItemStack stack);
+	@Shadow(remap = false) public abstract boolean canTill(ItemStack stack);
 
 	@Unique
 	private static final Set<ToolAction> DEFAULT_TOOL_ACTIONS = Sets.newIdentityHashSet();

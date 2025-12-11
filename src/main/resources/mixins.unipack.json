@@ -23,7 +23,11 @@
     "petrolpark.ConfigBooleanConditionSerializerMixin",
     "petrolpark.PetrolparkMixin",
     "projectile_damage.PlatformImplMixin",
-    "spectrum.MultiToolItemMixin"
+    "spectrum.MultiToolItemMixin",
+    "terramity.MinecraftServerMixin",
+    "terramity.OverworldBiomeBuilderMixin",
+    "terramity.TerramityModBiomesMixin",
+    "terramity.accessor.NoiseGeneratorSettingsAccessor"
   ],
   "client": [
     "destroy.DestroyCommonEventsMixin",
