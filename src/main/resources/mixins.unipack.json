@@ -12,7 +12,7 @@
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
     "create.FilteringBehaviourMixin",
-    "tfmg.FluidPropagatorMixin",
+    "destroy.DestroyBlocksMixin",
     "enigmaticlegacy.CursedRingMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
@@ -25,7 +25,8 @@
     "terramity.MinecraftServerMixin",
     "terramity.OverworldBiomeBuilderMixin",
     "terramity.TerramityModBiomesMixin",
-    "terramity.accessor.NoiseGeneratorSettingsAccessor"
+    "terramity.accessor.NoiseGeneratorSettingsAccessor",
+    "tfmg.FluidPropagatorMixin"
   ],
   "client": [
     "destroy.DestroyCommonEventsMixin",
