@@ -1,6 +1,6 @@
 package cc.unilock.unipack.mixin.projectile_damage;
 
-import net.fabricmc.loader.api.FabricLoader;
+import net.minecraftforge.fml.loading.LoadingModList;
 import net.projectile_damage.forge.PlatformImpl;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -9,10 +9,10 @@ import org.spongepowered.asm.mixin.Overwrite;
 public class PlatformImplMixin {
 	/**
 	 * @author unilock
-	 * @reason Fabric code on Forge
+	 * @reason Works pre-Forge mod init
 	 */
 	@Overwrite
 	public static boolean isModLoaded(String modid) {
-		return FabricLoader.getInstance().isModLoaded(modid);
+		return LoadingModList.get().getModFileById(modid) != null;
 	}
 }

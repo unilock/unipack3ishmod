@@ -1,7 +1,7 @@
 package cc.unilock.unipack;
 
 import com.bawnorton.mixinsquared.canceller.MixinCancellerRegistrar;
-import net.fabricmc.loader.api.FabricLoader;
+import net.minecraftforge.fml.loading.LoadingModList;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -25,11 +25,7 @@ public class UniPackMixin implements IMixinConfigPlugin {
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		String id = mixinClassName.replace("cc.unilock.unipack.mixin.", "").split("\\.")[0];
 
-		if ("create_destroy_tfmg".equals(id)) {
-			return FabricLoader.getInstance().isModLoaded("create") && FabricLoader.getInstance().isModLoaded("destroy") && FabricLoader.getInstance().isModLoaded("tfmg");
-		}
-
-		return FabricLoader.getInstance().isModLoaded(id);
+		return LoadingModList.get().getModFileById(id) != null;
 	}
 
 	@Override
