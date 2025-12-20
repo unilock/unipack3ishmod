@@ -25,6 +25,7 @@ Yes
 - fixes a bug in Create when used with Stacker (bigger stack sizes mod)
 - fixes a bug in Create: The Factory Must Grow when used alongside Destroy that causes a crash upon placing a pump block / entering a world
 - fixes a bug in Destroy that causes a client crash
+- fixes outdated code in Destroy causing a crash with the latest version(s) of Create
 - disables extraneous logging in Dynamic Surroundings
 - disables extra mob aggression when wearing the Ring of the Seven Curses from Enigmatic Legacy (evil mod)
 - fixes a bug in GeckoLib when using the Fabric version on Forge with Sinytra Connector
@@ -33,12 +34,10 @@ Yes
 - allows Jade's mod name tooltips to appear even when EMI is installed (since i prefer Jade's implementation)
 - fixes a weird server crash with Spectrum and some other unidentified mod
 - allows using a hoe to till mycelium and podzol
-- fixes a bug in Petrolpark's Library that causes a datapack reload crash
-- fixes a bug in Petrolpark's Library that causes a dedicated server crash during mod init
 - fixes an incompatibility in Projectile Damage when used with Sinytra Connector that causes a startup crash
 - disables all of Spectrum's darkness effects in its dimension as they do not work properly for me and make the dimension innavigable
 - allows Spectrum's MultiToolItems to perform Forge's ToolActions
+- smashes the stupid out of Terramity's biome injection code to make it work with esoteric mods like Yttr
 - fixes MC-122477
 - adds a tooltip to the "Shrinking Device" from "Shrink." that says it does not require power
 - prints "unilock was here" to the log during startup
-- fixes a bug in Petrolpark's Library that causes a crash with certain mods due to loading a Minecraft class pre-mixin processing
