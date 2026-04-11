@@ -8,7 +8,6 @@
     "biomemakeover.EntityUtilMixin",
     "bloodmagic.SerializersMixin",
     "caupona.CPCommonEventsMixin",
-    "caverns_and_chasms.SpinelBoomMixin",
     "complexhex.ComplexhexConfigFabricMixin",
     "corail_backpack.UtilsMixin",
     "create.FilteringBehaviourMixin",

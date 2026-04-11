@@ -113,7 +113,6 @@ dependencies {
     modCompileOnly 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modCompileOnly 'maven.modrinth:blood-magic:3.3.5-47'
     modCompileOnly 'curse.maven:caupona-656147:7112017'
-    modCompileOnly 'maven.modrinth:caverns-and-chasms:2.0.0'
     modCompileOnly 'curse.maven:corail-backpack-433316:5264214'
     modCompileOnly 'maven.modrinth:create:mc1.20.1-6.0.8'
     modCompileOnly 'maven.modrinth:create-tfmg:ZNOx0jhg'
