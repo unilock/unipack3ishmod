@@ -42,7 +42,7 @@ public abstract class MultiToolItemMixin extends DiggerItem {
 		SPECIAL_TOOL_ACTIONS.add(ToolActions.AXE_WAX_OFF);
 		SPECIAL_TOOL_ACTIONS.add(ToolActions.HOE_TILL);
 	}
-	
+
 	@Override
 	public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
 		if (DEFAULT_TOOL_ACTIONS.contains(toolAction)) {

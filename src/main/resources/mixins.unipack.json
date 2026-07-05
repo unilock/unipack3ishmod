@@ -20,6 +20,8 @@
     "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
     "projectile_damage.PlatformImplMixin",
+    "ratsmischief.RatItemMixin",
+    "scrimblos.ScrimbloItemMixin",
     "spectrum.MultiToolItemMixin",
     "terramity.MinecraftServerMixin",
     "terramity.OverworldBiomeBuilderMixin",

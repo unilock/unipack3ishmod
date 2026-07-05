@@ -19,7 +19,7 @@ public class Mc122477Fix {
 			ticks = 0;
 		}
 	}
-	
+
 	@SubscribeEvent
 	public void closing(final ScreenEvent.Closing event) {
 		if (event.getScreen() instanceof ChatScreen) {
