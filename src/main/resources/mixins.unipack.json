@@ -13,6 +13,7 @@
     "create.FilteringBehaviourMixin",
     "destroy.DestroyBlocksMixin",
     "enigmaticlegacy.CursedRingMixin",
+    "fabric_transfer_api_v1.ItemStorageMixin",
     "hexcasting.AddPerWorldPatternToScrollFuncMixin",
     "hexcasting.ForgeXplatImplMixin",
     "jade.WailaConfigConfigGeneralMixin",

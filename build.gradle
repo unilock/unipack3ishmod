@@ -109,6 +109,7 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     modImplementation 'dev.su5ed.sinytra:fabric-loader:2.7.15+0.19.3+1.20.1'
+    modImplementation 'dev.su5ed.sinytra.fabric-api:fabric-transfer-api-v1:3.3.6+25eff73b77'
 
     modCompileOnly 'maven.modrinth:biome-makeover:forge-1.20.1-1.11.4'
     modCompileOnly 'maven.modrinth:blood-magic:3.3.7-49'
