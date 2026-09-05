@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = DestroyCommonEvents.class, remap = false)
 public class DestroyCommonEventsMixin {
-	@Inject(method = "Lcom/petrolpark/destroy/core/event/DestroyCommonEvents;onLevelTick(Lnet/minecraftforge/event/TickEvent$LevelTickEvent;)V", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "onLevelTick(Lnet/minecraftforge/event/TickEvent$LevelTickEvent;)V", at = @At("HEAD"), cancellable = true)
 	private static void onTick(TickEvent.LevelTickEvent event, CallbackInfo ci) {
 		if (event.side.isClient()) ci.cancel();
 	}
