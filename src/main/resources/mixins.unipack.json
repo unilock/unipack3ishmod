@@ -18,6 +18,7 @@
     "hexcasting.ForgeXplatImplMixin",
     "jade.WailaConfigConfigGeneralMixin",
     "minecraft.LivingEntityMixin",
+    "minecraft.PlayerListMixin",
     "minecraft.PlayerMixin",
     "minecraft.SnowyDirtBlockMixin",
     "projectile_damage.PlatformImplMixin",
@@ -35,6 +36,7 @@
     "dsurround.MusicTrackerMixinSquared",
     "estrogen.EstrogenForgeClientMixin",
     "geckolib.GeoItemMixin",
+    "minecraft.ClientPacketListenerMixin",
     "spectrum.DarknessEffectsMixin"
   ],
   "injectors": {
