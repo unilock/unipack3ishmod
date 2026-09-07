@@ -30,7 +30,8 @@
     "terramity.OverworldBiomeBuilderMixin",
     "terramity.TerramityModBiomesMixin",
     "terramity.accessor.NoiseGeneratorSettingsAccessor",
-    "tfmg.FluidPropagatorMixin"
+    "tfmg.FluidPropagatorMixin",
+    "wearablebackpacks.BackpackMenuMixin"
   ],
   "client": [
     "brutality.MinecraftMixin",

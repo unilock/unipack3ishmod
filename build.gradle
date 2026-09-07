@@ -124,6 +124,7 @@ dependencies {
     modCompileOnly 'maven.modrinth:estrogen:5.0.8+1.20.1-forge'
     modCompileOnly 'maven.modrinth:hex-casting:O6xIFHAg'
     modCompileOnly 'maven.modrinth:jade:11.13.2+forge'
+    modCompileOnly 'maven.modrinth:nyfs-wearable-backpacks:aSNmRGpK'
     modCompileOnly 'maven.modrinth:petrolpark:1.20.1-1.4.23'
     modCompileOnly 'maven.modrinth:projectile-damage-attribute:3.2.3+1.20.1-forge'
     modCompileOnly 'maven.modrinth:shrink:1.4.5'
