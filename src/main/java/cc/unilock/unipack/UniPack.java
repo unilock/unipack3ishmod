@@ -11,10 +11,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.LoadingModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
@@ -25,6 +25,10 @@ public class UniPack {
     public static final String MOD_ID = "unipack";
     public static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final boolean BETTERCOMBAT = LoadingModList.get().getModFileById("bettercombat") != null;
+    public static final boolean BLOODMAGIC = LoadingModList.get().getModFileById("bloodmagic") != null;
+    public static final boolean SHRINK = LoadingModList.get().getModFileById("shrink") != null;
+
     public static final DeferredRegister<EntityDataSerializer<?>> ENTITY_DATA_SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, MOD_ID);
 
     public UniPack() {
@@ -32,10 +36,10 @@ public class UniPack {
         modEventBus.addListener(this::commonSetup);
 
         ENTITY_DATA_SERIALIZERS.register(modEventBus);
-        if (ModList.get().isLoaded("bloodmagic")) {
+        if (BLOODMAGIC) {
             ENTITY_DATA_SERIALIZERS.register("will_type", () -> Serializers.WILL_TYPE_SERIALIZER);
         }
-        if (ModList.get().isLoaded("shrink")) {
+        if (SHRINK) {
             MinecraftForge.EVENT_BUS.addListener(this::itemTooltip);
         }
         MinecraftForge.EVENT_BUS.addListener(this::registerCommands);

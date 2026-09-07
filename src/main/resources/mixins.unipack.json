@@ -33,6 +33,7 @@
     "tfmg.FluidPropagatorMixin"
   ],
   "client": [
+    "brutality.MinecraftMixin",
     "destroy.DestroyCommonEventsMixin",
     "dsurround.MusicTrackerMixinSquared",
     "estrogen.EstrogenForgeClientMixin",

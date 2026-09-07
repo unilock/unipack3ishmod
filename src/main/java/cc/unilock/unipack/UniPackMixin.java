@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Set;
 
 public class UniPackMixin implements IMixinConfigPlugin {
+	private static final boolean CONNECTOR = LoadingModList.get().getModFileById("connectormod") != null;
+
 	@Override
 	public void onLoad(String mixinPackage) {
 		MixinCancellerRegistrar.register(new UniPackMixinCanceller());
@@ -24,6 +26,10 @@ public class UniPackMixin implements IMixinConfigPlugin {
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		String id = mixinClassName.replace("cc.unilock.unipack.mixin.", "").split("\\.")[0];
+
+		if ("geckolib".equals(id)) {
+			return LoadingModList.get().getModFileById(id) != null && CONNECTOR;
+		}
 
 		return LoadingModList.get().getModFileById(id) != null;
 	}
