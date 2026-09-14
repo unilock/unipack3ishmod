@@ -31,7 +31,7 @@ public class MinecraftMixin {
 		}
 	}
 
-	@Inject(method = "startAttack", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/client/event/InputEvent$InteractionKeyMappingTriggered;shouldSwingHand()Z"))
+	@Inject(method = "startAttack", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/client/event/InputEvent$InteractionKeyMappingTriggered;shouldSwingHand()Z", remap = false))
 	private void startAttack(CallbackInfoReturnable<Boolean> cir) {
 		if (!UniPack.BETTERCOMBAT) {
 			PacketHandler.sendToServer(new ServerboundBetterCombatAttackStartListenerPacket(this.player.getItemInHand(InteractionHand.MAIN_HAND), 0));
