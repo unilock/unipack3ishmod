@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 @Mixin(value = ModQuery.class, remap = false)
 public class ModQueryMixin {
 	@ModifyArg(method = "matchesUnbaked", at = @At(value = "INVOKE", target = "Ldev/emi/emi/EmiUtil;getModName(Ljava/lang/String;)Ljava/lang/String;"))
-	private static String getModName(String namespace, @Local(argsOnly = true) EmiStack emiStack) {
+	private String getModName(String namespace, @Local(argsOnly = true) EmiStack emiStack) {
 		ItemStack stack = emiStack.getItemStack();
 		return stack.getItem().getCreatorModId(stack);
 	}
